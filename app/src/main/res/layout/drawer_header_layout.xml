@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/starry_night"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lisko presents"
+        android:textColor="@color/colorOnPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/drawer_header_title"
+        app:layout_constraintStart_toStartOf="@+id/drawer_header_title" />
+
+    <TextView
+        android:id="@+id/drawer_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Navigation Application"
+        android:textColor="@color/colorOnSecondary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/colorOnPrimary"
+        android:shadowRadius="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
